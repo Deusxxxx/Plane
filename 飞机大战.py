@@ -15,8 +15,9 @@ class Plane(object):
 # 初始化各种属性
     def __init__(self):
         # 不知道需要定义啥，稍后再添加
-        pass
-        # 
+        left, top = (400,50)
+        self.node = pygame.rect(left, top, 50, 50)
+
     # 只能左右移动
     # def move(self, curkey):
     #     if curkey == pygame.K_LEFT:
@@ -66,7 +67,7 @@ def main():
 
         # 画飞机
         # node = plane.node
-        node = pygame.Rect(475, 50, 50, 50)
+        node = plane.node
         pygame.draw.rect(screen,(255,220,39),node,0)
 
         pygame.display.update()
