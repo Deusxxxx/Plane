@@ -16,11 +16,14 @@ class Ship():
 
         # 移动标识
         self.move_right = False
+        self.move_left = False
 
     def update(self):
         """根据移动标识调整飞船的位置"""
         if self.move_right:
             self.rect.centerx += 1
+        if self.move_left:
+            self.rect.centerx -= 1
 
     def blitme(self):
         # 在指定位置绘制飞船
