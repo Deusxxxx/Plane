@@ -14,7 +14,8 @@ def run_game():
     # 设置背景颜色
     bg_color = (230, 230, 230)
 
-    ship = Ship(screen)
+    # 创建飞船
+    ship = Ship(ai_settings, screen)
 
     # 开始游戏主循环
     while True:
